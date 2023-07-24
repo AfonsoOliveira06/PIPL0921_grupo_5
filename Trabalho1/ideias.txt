@@ -1,0 +1,35 @@
+obj: criarem uma api para que premita gerir alunos numa esocola.
+
+Consultar:
+    turmas
+    professores
+    alunos
+
+Adicionar:
+    Alunos
+    turmas
+    professores
+
+Exclusão:
+    Alunos
+    turmas
+    professores
+
+Atualizar dados dos Alunos, Turmas e Professores
+
+consultar os alunos:
+    dados do aluno
+    Notas
+    Faltas
+
+consultar os professores:
+    dados do professor
+    UFCD
+    Faltas
+    horário
+
+consultar as turmas:
+    alunos
+    UFCD
+
+
