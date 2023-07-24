@@ -1,9 +1,23 @@
 obj: criarem uma api para que premita gerir alunos numa esocola.
 
 Consultar:
-    turmas
-    professores
-    alunos
+    consultar os alunos:
+        dados do aluno
+        Notas
+        Faltas
+
+    consultar os professores:
+        dados do professor
+        UFCDs
+        Faltas
+        horário
+
+    consultar as turmas:
+        identificação da turma(PIPL0921)
+        alunos da turma
+        horários de aulas
+        Coordenador de turma
+        UFCDs
 
 Adicionar:
     Alunos
@@ -12,24 +26,11 @@ Adicionar:
 
 Exclusão:
     Alunos
-    turmas
     professores
 
 Atualizar dados dos Alunos, Turmas e Professores
 
-consultar os alunos:
-    dados do aluno
-    Notas
-    Faltas
 
-consultar os professores:
-    dados do professor
-    UFCD
-    Faltas
-    horário
 
-consultar as turmas:
-    alunos
-    UFCD
 
 
