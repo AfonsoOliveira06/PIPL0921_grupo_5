@@ -15,13 +15,5 @@ async def root():
 
 
 @app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
-
-
-@app.get("/hello/{name}/{ano}")
-async def say_hello(name: str, ano: int):
-    msg = {"message": f"Hello {name}", "ano": ano}
-    for i in range(10):
-        msg[f"Mensagem {i}"] = f"conteudo da msg {i}: {i}"
-    return msg
+async def say_hello(nome: str):
+    return {"message": f"Hello {nome}"}

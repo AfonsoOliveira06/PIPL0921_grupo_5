@@ -4,4 +4,4 @@ class Pessoa:
         self.idade = idade
 
 
-ListaPessoas = [Pessoa("Joao", 30)]
+ListaPessoas = Pessoa("Joao", 30)
