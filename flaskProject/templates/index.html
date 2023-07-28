@@ -1,0 +1,39 @@
+{%  extends 'base.html' %}
+
+
+{% block titulo %} A Minha 1 pagina flask {% endblock %}
+
+
+ {% block conteudo %}
+    <h1>{{ header  }}</h1>
+
+    <ol>
+       {% for aluno in lista %}
+           <li>
+                <form method="post" action="{{ url_for("remove") }}">
+                    <input type="hidden" id="alunoId" name="alunoId" value="{{ aluno.id }}">
+                    <a href="alunos/{{ aluno.id }}"> {{ aluno.nome }} ({{ aluno.turma }}) </a>
+                    <input type="submit" value="Remover">
+                </form>
+            </li>
+        {% endfor %}
+
+    </ol>
+
+     <div class="ok">
+        <form method="post" action="{{ url_for("add") }}">
+             <input placeholder="Nome:" type="text" id="novoNome"  name="novoNome" class="novoNome"><br><br>
+             <input placeholder="Turma:" type="text" id="novaTurma"  name="novaTurma" class="novaTurma"><br><br>
+             <input type="submit" value="Novo Nome">
+        </form>
+         <div class="ok1">
+         <form method="get">
+            <input type="text" name="search" placeholder="Pesquisar"><br><br>
+            <input type="submit" value="Pesquisar">
+        </form>
+        </div>
+     </div>
+
+
+
+ {% endblock %}
