@@ -48,7 +48,7 @@ while True:
 
     elif tarefa == "6":
         mov_conta = conta.Consultar_extrato()
-        print("Extrato da conta:")
+        print("Extrato da conta: ")
         for i in mov_conta:
             print(i)
 

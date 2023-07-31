@@ -33,7 +33,7 @@ class Banco:
         conta_ori = self.procurar(num_conta)
         conta_dest= self.procurar(num_destino)
         if not conta_ori or not conta_dest:
-             return "Alguma das contas que inseriu não existe"
+             return "Alguma das contas que inseriu não existe "
         conta_ori.levantar(valor)
         conta_dest.depositar(valor)
         return "Transeferência realizada"
